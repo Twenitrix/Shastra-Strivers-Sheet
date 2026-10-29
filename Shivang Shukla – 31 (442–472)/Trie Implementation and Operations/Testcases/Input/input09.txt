@@ -1,0 +1,6 @@
+5
+INSERT a
+INSERT ab
+INSERT abc
+SEARCH a
+SEARCH abc

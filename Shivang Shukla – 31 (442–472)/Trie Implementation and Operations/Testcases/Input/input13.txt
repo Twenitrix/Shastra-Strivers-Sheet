@@ -1,0 +1,6 @@
+5
+INSERT apple
+INSERT apply
+INSERT appetite
+STARTSWITH app
+STARTSWITH appl

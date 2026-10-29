@@ -1,0 +1,6 @@
+5
+INSERT a
+INSERT ab
+INSERT abc
+COUNT a
+COUNT ab

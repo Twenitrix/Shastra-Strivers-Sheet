@@ -1,0 +1,11 @@
+10
+INSERT apple
+INSERT app
+SEARCH app
+PREFIX ap
+COUNT ap
+DELETE app
+SEARCH app
+SEARCH apple
+COUNT ap
+PREFIX appl

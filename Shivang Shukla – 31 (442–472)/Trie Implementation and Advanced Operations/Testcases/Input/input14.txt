@@ -1,0 +1,5 @@
+4
+INSERT ab
+INSERT abc
+COUNT ab
+COUNT abc

@@ -1,0 +1,12 @@
+11
+COUNT cca
+SEARCH ba
+PREFIX a
+DELETE a
+COUNT aab
+INSERT aa
+COUNT acb
+SEARCH aa
+SEARCH aa
+PREFIX cc
+PREFIX aab

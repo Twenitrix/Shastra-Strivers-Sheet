@@ -1,0 +1,7 @@
+6
+INSERT apple
+INSERT app
+SEARCH app
+SEARCH appl
+STARTSWITH appl
+STARTSWITH banana

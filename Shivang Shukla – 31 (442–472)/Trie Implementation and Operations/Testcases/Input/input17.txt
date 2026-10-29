@@ -1,0 +1,6 @@
+5
+INSERT prefix1
+INSERT prefix2
+INSERT prefix3
+SEARCH prefix2
+STARTSWITH prefix

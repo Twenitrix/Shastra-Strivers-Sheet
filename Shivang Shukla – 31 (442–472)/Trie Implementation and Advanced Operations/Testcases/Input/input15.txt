@@ -1,0 +1,6 @@
+5
+INSERT aa
+INSERT ab
+COUNT a
+PREFIX aa
+PREFIX ac

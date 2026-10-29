@@ -1,0 +1,4 @@
+3
+INSERT abcdefghij
+SEARCH abcdefghij
+SEARCH abcdefghi
