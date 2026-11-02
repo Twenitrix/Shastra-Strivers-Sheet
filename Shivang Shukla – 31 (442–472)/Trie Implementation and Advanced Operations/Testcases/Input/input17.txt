@@ -1,0 +1,6 @@
+5
+INSERT a
+INSERT b
+INSERT c
+COUNT a
+SEARCH b

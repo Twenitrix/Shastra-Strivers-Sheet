@@ -1,0 +1,5 @@
+4
+INSERT hello
+STARTSWITH hello
+STARTSWITH hell
+STARTSWITH helloo

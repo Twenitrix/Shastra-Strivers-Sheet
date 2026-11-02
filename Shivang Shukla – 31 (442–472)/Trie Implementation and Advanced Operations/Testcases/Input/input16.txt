@@ -1,0 +1,7 @@
+6
+INSERT a
+INSERT ab
+INSERT abc
+DELETE ab
+SEARCH ab
+COUNT a

@@ -1,0 +1,11 @@
+10
+COUNT b
+PREFIX bbb
+SEARCH aca
+COUNT cca
+COUNT ccc
+PREFIX baa
+COUNT a
+INSERT cc
+PREFIX cab
+SEARCH cc

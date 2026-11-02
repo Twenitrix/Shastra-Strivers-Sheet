@@ -1,0 +1,6 @@
+5
+INSERT apple
+INSERT apply
+INSERT apples
+COUNT appl
+COUNT app

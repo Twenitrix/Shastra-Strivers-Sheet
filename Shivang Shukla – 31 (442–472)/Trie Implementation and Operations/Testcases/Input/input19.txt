@@ -1,0 +1,5 @@
+4
+INSERT aaa
+INSERT bbb
+INSERT ccc
+SEARCH ddd

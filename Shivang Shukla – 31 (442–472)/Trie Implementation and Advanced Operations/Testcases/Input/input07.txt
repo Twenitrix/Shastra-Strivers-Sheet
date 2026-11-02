@@ -1,0 +1,3 @@
+2
+DELETE x
+SEARCH x

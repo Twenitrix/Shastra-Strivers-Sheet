@@ -1,0 +1,5 @@
+4
+INSERT apple
+SEARCH appl
+SEARCH apple
+STARTSWITH appl

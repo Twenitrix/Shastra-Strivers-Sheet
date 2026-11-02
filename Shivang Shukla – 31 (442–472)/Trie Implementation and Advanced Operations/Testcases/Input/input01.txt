@@ -1,0 +1,7 @@
+6
+INSERT cat
+INSERT car
+INSERT cat
+COUNT ca
+DELETE dog
+SEARCH cat
