@@ -1,11 +1,12 @@
 // Pascal's Triangle II - Generator/gen.java
 import java.io.*;
+import java.math.BigInteger;
 import java.util.*;
 
 public class gen {
     public static void main(String[] args) throws IOException {
         String baseDir = "Testcases";
-        if (new File("../Testcases").exists() || new File("../Problem.md").exists()) {
+        if (new File("../Testcases").exists()) {
             baseDir = "../Testcases";
         }
 
@@ -14,43 +15,27 @@ public class gen {
         inputDir.mkdirs();
         outputDir.mkdirs();
 
-        List<Integer> cases = buildCases();
-        if (cases.size() != 100) {
-            throw new IllegalStateException("Expected 100 testcases but built " + cases.size());
-        }
-
-        for (int i = 0; i < cases.size(); i++) {
-            String fileName = String.format("%02d", i);
-            int n = cases.get(i);
-
+        for (int r = 0; r < 100; r++) {
+            String fileName = String.format("%02d", r);
             PrintWriter inWriter = new PrintWriter(new BufferedWriter(new FileWriter(new File(inputDir, "input" + fileName + ".txt"))));
-            inWriter.println(n);
+            inWriter.println(r);
             inWriter.close();
 
             PrintWriter outWriter = new PrintWriter(new BufferedWriter(new FileWriter(new File(outputDir, "output" + fileName + ".txt"))));
-            outWriter.println(solve(n));
+            outWriter.println(solve(r));
             outWriter.close();
         }
         System.out.println("Testcases generated successfully!");
     }
 
     static String solve(int rowIndex) {
-        long val = 1;
+        BigInteger val = BigInteger.ONE;
         StringBuilder sb = new StringBuilder();
         sb.append(1);
         for (int i = 1; i <= rowIndex; i++) {
-            val = val * (rowIndex - i + 1) / i;
+            val = val.multiply(BigInteger.valueOf(rowIndex - i + 1)).divide(BigInteger.valueOf(i));
             sb.append(" ").append(val);
         }
         return sb.toString();
-    }
-
-    static List<Integer> buildCases() {
-        List<Integer> list = new ArrayList<>();
-        // 0 to 33 all covered
-        for (int i = 0; i <= 33; i++) list.add(i);
-        for (int i = 0; i <= 33; i++) list.add(i);
-        for (int i = 0; i <= 31; i++) list.add(i);
-        return list;
     }
 }
